@@ -1,7 +1,11 @@
 '''A monolithic and poorly written tic-tac-toe for you to refactor.'''
+
+from player import Player
+
 # Game state
-p1 = "X"
-p2 = "O"
+player1 = Player("Player 1","X")
+player2 = Player("Player 2","O")
+
 empty = " "
 board = [empty] * 9
 
@@ -29,10 +33,10 @@ while True:
 
     # Get next move
     while True:
-        player = p1 if board.count(empty) % 2 == 1 else p2
-        move = input("Next move for player " + player + " (0-8): ")
+        player = player1 if board.count(empty) % 2 == 1 else player2
+        move = input("Next move for player " + player.name + " (0-8): ")
         if move.isdigit() and 0 <= int(move) <= 8 and board[int(move)] == empty:
-            board[int(move)] = player
+            board[int(move)] = player.symbol
             break
         else:
             print("Invalid move, try again.")
