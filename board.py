@@ -9,8 +9,14 @@ class Board:
             print(self.board[i])
 
 
+    def update_board(self,row,column):
+        self.board[1][0] = "X"
+        print(self.board)
 
-board = Board(4)
+board = Board(3)
+# board.print_board()
+print("")
+board.update_board(0,0)
 board.print_board()
 
 
