@@ -1,14 +1,16 @@
 class Board:
     def __init__(self,size):
         self.size = size
-        self.board = [""] * self.size
+        # board has to be a square
+        self.board = [[""] * self.size ] * self.size
 
-    # board has to be a square
     def print_board(self):
-        print(self.board)
+        for i in range(self.size):
+            print(self.board[i])
 
 
-board = Board(3)
+
+board = Board(4)
 board.print_board()
 
 
