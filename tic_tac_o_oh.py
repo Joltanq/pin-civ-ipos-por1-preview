@@ -1,6 +1,7 @@
 '''A monolithic and poorly written tic-tac-toe for you to refactor.'''
 
 from player import Player
+from board import Board
 
 # Game state
 player1 = Player("Player 1","X")
