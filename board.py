@@ -3,21 +3,26 @@ class Board:
         self.size = size
         # board has to be a square
         self.board = [[""] * self.size ] * self.size
+        # self.board = [""] * self.size
 
     def print_board(self):
         for i in range(self.size):
             print(self.board[i])
 
 
-    def update_board(self,row,column):
-        self.board[1][0] = "X"
+    # def update_board(self,row,column):
+    #     self.board[1][0] = "X"
+    #     print(self.board)
+
+    def update_board(self,position):
+        self.board[1] = "X"
         print(self.board)
 
-board = Board(3)
-# board.print_board()
-print("")
-board.update_board(0,0)
+board = Board(9)
 board.print_board()
+print("")
+# board.update_board(0)
+# board.print_board()
 
 
     # needs functions to
