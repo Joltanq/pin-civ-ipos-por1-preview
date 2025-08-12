@@ -10,5 +10,5 @@ class Player:
         print("isit my turn")
 
 
-    def make_move(self,position):
+    def make_move(self,row,column):
         ...
