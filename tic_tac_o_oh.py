@@ -21,9 +21,7 @@ while True:
             exit(0)
 
     # Check for tie
-    if empty not in board:
-        print("It's a tie!")
-        exit(0)
+    board.check_for_tie()
 
     # Get next move
     while True:

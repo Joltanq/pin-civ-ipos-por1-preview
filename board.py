@@ -11,6 +11,12 @@ class Board:
         self.board[row][column] = "X"
         print(self.board)
 
+
+    def check_for_tie(self):
+        if "" not in board:
+            print("It's a tie!")
+            exit(0)
+
 board = Board()
 board.print_board()
 print("")
