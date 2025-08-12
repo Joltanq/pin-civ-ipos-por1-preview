@@ -1,28 +1,21 @@
-class Board:
-    def __init__(self,size):
-        self.size = size
-        # board has to be a square
-        self.board = [[""] * self.size ] * self.size
-        # self.board = [""] * self.size
 
+grid_size = 3
+class Board:
+    board = [["","",""],["","",""],["","",""]]
     def print_board(self):
-        for i in range(self.size):
+        for i in range(3):
             print(self.board[i])
 
 
-    # def update_board(self,row,column):
-    #     self.board[1][0] = "X"
-    #     print(self.board)
-
-    def update_board(self,position):
-        self.board[1] = "X"
+    def update_board(self,row,column):
+        self.board[row][column] = "X"
         print(self.board)
 
-board = Board(9)
+board = Board()
 board.print_board()
 print("")
-# board.update_board(0)
-# board.print_board()
+board.update_board(0,1)
+
 
 
     # needs functions to
