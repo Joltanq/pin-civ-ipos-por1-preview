@@ -14,7 +14,7 @@ class Board:
 board = Board()
 board.print_board()
 print("")
-board.update_board(0,1)
+# board.update_board(0,1)
 
 
 

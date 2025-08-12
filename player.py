@@ -10,5 +10,9 @@ class Player:
         print("isit my turn")
 
 
-    def make_move(self,row,column):
-        ...
+    def make_move(self):
+        row = input(f"{self.name}, what row would you like to place?")
+        column = input(f"{self.name}, what row would you like to place?")
+        return  row,column
+
+

@@ -28,7 +28,7 @@ while True:
     # Get next move
     while True:
         player = player1 if board.count(empty) % 2 == 1 else player2
-        row_input = input("Next move for player " + player.name + " (0-8): ")
+        player.make_move()
         if move.isdigit() and 0 <= int(move) <= 8 and board[int(move)] == empty:
             board[int(move)] = player.symbol
             break
